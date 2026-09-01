@@ -9,7 +9,7 @@ Welcome to my central repository for all projects developed during the **CodeAlp
 | Task #     | Project Name                         | Description                                                           | Tech Stack      | Status         |
 | :--------- | :----------------------------------- | :-------------------------------------------------------------------- | :-------------- | :------------- |
 | **Task 1** | _Upcoming Task_                      | Reserved for Task 1 assignment                                        | HTML, CSS, JS   | ⏳ In Progress |
-| **Task 2** | [Web Calculator](./Task2_Calculator) | Modern 3D Neumorphic Calculator with live preview & keyboard controls | HTML5, CSS3, JS | ✅ Completed   |
+| **Task 2** | [Web Calculator](./CodeAlpha_Calculator) | Modern 3D Neumorphic Calculator with live preview & keyboard controls | HTML5, CSS3, JS | ✅ Completed   |
 | **Task 3** | _Upcoming Task_                      | Reserved for Task 3 assignment                                        | HTML, CSS, JS   | ⏳ Pending     |
 
 ---
