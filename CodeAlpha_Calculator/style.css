@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Lifted background with a rich gradient radial glow */
+  background: radial-gradient(circle at center, #1e1b4b 0%, #0f172a 100%);
+  padding: 20px;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 360px;
+  background: #1e293b;
+  border-radius: 28px;
+  padding: 26px;
+  /* Subtle border + dual-tone soft neumorphic shadow */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 12px 12px 24px #090d16, -8px -8px 20px #2a374e;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #0f172a;
+  border-radius: 18px;
+  padding: 14px 18px;
+  min-height: 85px;
+  margin-bottom: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: inset 5px 5px 10px #080d1a, inset -4px -4px 8px #162138;
+}
+
+#preview {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  text-align: right;
+  min-height: 1.2rem;
+  word-break: break-all;
+}
+
+.display input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #38bdf8;
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-align: right;
+  padding: 0;
+  outline: none;
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  height: 58px;
+  border: none;
+  border-radius: 16px;
+  background: #1e293b;
+  color: #e2e8f0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #131b27, -4px -4px 9px #29374f;
+  transition: all 0.15s ease;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background: #273549;
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  box-shadow: inset 4px 4px 8px #111827, inset -3px -3px 6px #2b3a52;
+  transform: translateY(0);
+  transform: scale(0.96);
+}
+
+.btn-action {
+  color: #fb7185; /* Vibrant Rose */
+}
+
+.btn-operator {
+  color: #c084fc; /* Bright Violet */
+}
+
+.btn-equal {
+  grid-row: span 2;
+  height: 100%;
+  background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+  color: #ffffff;
+  box-shadow: 5px 5px 12px #0f172a, -3px -3px 8px #2b3754;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.btn-equal:hover {
+  opacity: 0.95;
+  box-shadow: 0 0 18px rgba(6, 182, 212, 0.5);
+}
+
+.btn-equal:active {
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.btn-zero {
+  grid-column: span 2;
+}
