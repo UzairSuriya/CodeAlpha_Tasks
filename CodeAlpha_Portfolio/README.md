@@ -6,6 +6,14 @@ Developed as part of the **Frontend Development Virtual Internship at CodeAlpha*
 
 ---
 
+## 🌐 Live Demo
+
+Experience the live application online without local setup:
+
+👉 **[Launch Live Portfolio Site](https://protfolio-uzair.netlify.app/)**
+
+---
+
 ## ✨ Features
 
 - **🌓 Dynamic Dark/Light Theme Switcher:** Seamlessly toggles between a glassmorphic space-dark mode and a clean executive light mode with persistent theme choices saved via `localStorage`.
