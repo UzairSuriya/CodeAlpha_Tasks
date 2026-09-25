@@ -10,7 +10,7 @@ Welcome to my central repository for all projects developed during the **CodeAlp
 | :--------- | :----------------------------------- | :-------------------------------------------------------------------- | :-------------- | :------------- |
 | **Task 1** | _Upcoming Task_                      | Reserved for Task 1 assignment                                        | HTML, CSS, JS   | ⏳ In Progress |
 | **Task 2** | [Web Calculator](./CodeAlpha_Calculator) | Modern 3D Neumorphic Calculator with live preview & keyboard controls | HTML5, CSS3, JS | ✅ Completed   |
-| **Task 3** | _Upcoming Task_                      | Reserved for Task 3 assignment                                        | HTML, CSS, JS   | ⏳ Pending     |
+| **Task 3** | [Developer Portfolio](./CodeAlpha_Portfolio) | Responsive portfolio with dark/light mode toggle & filters | HTML5, CSS3, JS | ✅ Completed |
 
 ---
 
@@ -18,7 +18,12 @@ Welcome to my central repository for all projects developed during the **CodeAlp
 
 ```text
 CodeAlpha_Tasks/
-├── Task2_Calculator/
+├── CodeAlpha_Calculator/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
+├── CodeAlpha_Portfolio/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
