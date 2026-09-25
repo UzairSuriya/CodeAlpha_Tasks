@@ -5,17 +5,16 @@ const buttons = document.querySelectorAll(".btn");
 let currentInput = "";
 let isEvaluated = false;
 
-// Helper function to update screen and preview
+
 function updateDisplay(inputVal) {
   screen.value = inputVal || "0";
   preview.textContent = inputVal;
 }
 
-// Function handling mathematical evaluation and error handling
+
 function calculateResult() {
   if (!currentInput) return;
 
-  // Advanced Error Handling: Division by Zero check
   if (/\/0(?!\d)/.test(currentInput)) {
     preview.textContent = `${currentInput} =`;
     screen.value = "Cannot divide by 0";
@@ -45,7 +44,6 @@ function calculateResult() {
   }
 }
 
-// Button Click Event Handler
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     const value = button.dataset.value;
@@ -81,7 +79,6 @@ buttons.forEach((button) => {
   });
 });
 
-// Keydown Event Handler
 window.addEventListener("keydown", (e) => {
   const key = e.key;
 
