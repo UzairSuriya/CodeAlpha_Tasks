@@ -30,14 +30,14 @@ Developed as part of the **Frontend Development Virtual Internship at CodeAlpha*
 1. **Clone the Repository:**
 
    ```bash
-   git clone [https://github.com/YourUsername/CodeAlpha_Calculator.git](https://github.com/UzairSuriya/CodeAlpha_Calculator.git)
+   git clone [https://github.com/UzairSuriya/CodeAlpha_Tasks.git](https://github.com/UzairSuriya/CodeAlpha_Tasks.git)
 
    ```
 
 2. **Navigate into the Project Directory:**
 
    ```bash
-   cd CodeAlpha_Calculator
+   cd CodeAlpha_Tasks/Task2_Calculator
    ```
 
 3. **Open the Application:**
