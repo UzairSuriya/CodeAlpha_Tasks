@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Uzair | Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Uzair<span>.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <span class="badge">Frontend Development Intern @ CodeAlpha</span>
+            <h1>Building Modern & Interactive <span class="highlight">Web Experiences</span></h1>
+            <p>I specialize in crafting responsive, performant, and user-centric web applications with clean code,
+                interactive JavaScript, and custom UI aesthetics.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/UzairSuriya" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/YourProfile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-card">
+            <p>I am a Frontend Developer focused on building accessible, responsive, and performant web interfaces using
+                HTML5, CSS3, JavaScript, and modern workflow tools. Currently delivering internship tasks as a Frontend
+                Intern at CodeAlpha.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
+            <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript (ES6+)</span></div>
+            <div class="skill-card"><i class="fab fa-react"></i><span>React</span></div>
+            <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="experience-list">
+            <div class="exp-card">
+                <div class="exp-header">
+                    <h3>Frontend Development Intern</h3>
+                    <span class="exp-date">September 2026 – Present</span>
+                </div>
+                <p class="exp-company">CodeAlpha (Remote)</p>
+                <p>Building interactive web projects, managing version control via Git & GitHub Desktop, and creating
+                    modern UI layouts.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-header">
+                    <h3>Intermediate Student (CS, Math, Stats)</h3>
+                    <span class="exp-date">Enrolled</span>
+                </div>
+                <p class="exp-company">Sir Adamjee Intermediate College</p>
+                <p>Focusing on computer science fundamentals, statistics, and mathematics under the Karachi Board.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="vanilla-js">Vanilla JS</button>
+            <button class="filter-btn" data-filter="web-apps">Web Apps</button>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- 1. CodeAlpha Task 2: Web Calculator -->
+            <div class="project-card" data-category="vanilla-js">
+                <div class="project-info">
+                    <span class="project-tag">CodeAlpha Task 2</span>
+                    <h3>Interactive 3D Web Calculator</h3>
+                    <p>A web calculator featuring a 3D dark-mode UI, live expression previewing, keyboard accessibility,
+                        and
+                        comprehensive error handling.</p>
+                    <div class="tech-stack">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/UzairSuriya/CodeAlpha_Tasks/tree/main/Task2_Calculator"
+                            target="_blank" class="btn-link"><i class="fab fa-github"></i> Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. ConvertX (Currency Converter) -->
+            <div class="project-card" data-category="web-apps">
+                <div class="project-info">
+                    <span class="project-tag">API Integration</span>
+                    <h3>ConvertX</h3>
+                    <p>Fast, responsive currency converter web app fetching real-time global exchange rates and dynamic
+                        country flags via free REST APIs.</p>
+                    <div class="tech-stack">
+                        <span>JavaScript</span><span>REST API</span><span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/UzairSuriya" target="_blank" class="btn-link"><i
+                                class="fab fa-github"></i> Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. TaskX (To-Do List) -->
+            <div class="project-card" data-category="web-apps">
+                <div class="project-info">
+                    <span class="project-tag">Productivity App</span>
+                    <h3>TaskX</h3>
+                    <p>Modern, responsive To-Do List web application built with vanilla JavaScript, CSS custom
+                        variables,
+                        and Font Awesome icons.</p>
+                    <div class="tech-stack">
+                        <span>JavaScript</span><span>CSS</span><span>HTML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/UzairSuriya" target="_blank" class="btn-link"><i
+                                class="fab fa-github"></i> Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Score Tracker (Basketball Scoreboard) -->
+            <div class="project-card" data-category="vanilla-js">
+                <div class="project-info">
+                    <span class="project-tag">Interactive Utility</span>
+                    <h3>Score Tracker</h3>
+                    <p>Interactive basketball scoreboard app featuring real-time DOM updates and persistent score
+                        tracking
+                        via localStorage.</p>
+                    <div class="tech-stack">
+                        <span>JavaScript</span><span>HTML</span><span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/UzairSuriya" target="_blank" class="btn-link"><i
+                                class="fab fa-github"></i> Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-card">
+            <p>Interested in working together or reviewing my internship tasks? Feel free to reach out through social
+                platforms or send a direct message.</p>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Send
+                    Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Muhammad Uzair. Built for CodeAlpha Internship Submission.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
