@@ -1,0 +1,418 @@
+/* Base Variables - Dark Theme Default */
+:root {
+  --bg-gradient: radial-gradient(circle at 50% 10%, #1e1b4b 0%, #030712 100%);
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --nav-bg: rgba(3, 7, 18, 0.85);
+  --nav-border: rgba(255, 255, 255, 0.08);
+  --card-bg: rgba(17, 24, 39, 0.65);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --accent-blue: #38bdf8;
+  --accent-purple: #a855f7;
+  --btn-primary: linear-gradient(135deg, #0284c7, #7c3aed);
+  --btn-primary-text: #ffffff;
+  --btn-sec-bg: rgba(255, 255, 255, 0.05);
+  --btn-sec-border: rgba(255, 255, 255, 0.15);
+  --tag-bg: rgba(255, 255, 255, 0.06);
+  --tag-text: #cbd5e1;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Light Theme Overrides */
+body.light-theme {
+  --bg-gradient: radial-gradient(circle at 50% 10%, #f1f5f9 0%, #e2e8f0 100%);
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  --nav-border: rgba(203, 213, 225, 0.6);
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-border: rgba(203, 213, 225, 0.8);
+  --accent-blue: #0284c7;
+  --accent-purple: #7c3aed;
+  --btn-primary: linear-gradient(135deg, #0284c7, #2563eb);
+  --btn-primary-text: #ffffff;
+  --btn-sec-bg: #ffffff;
+  --btn-sec-border: #cbd5e1;
+  --tag-bg: #e2e8f0;
+  --tag-text: #1e293b;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-gradient);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--nav-border);
+  z-index: 1000;
+  padding: 16px 0;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--accent-blue);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 4px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: var(--accent-blue) !important;
+  border-bottom: 2px solid var(--accent-blue);
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  background: var(--btn-sec-bg);
+  border: 1px solid var(--btn-sec-border);
+  color: var(--accent-blue);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.08);
+}
+
+.btn-nav {
+  padding: 8px 18px;
+  border: 1px solid var(--accent-blue);
+  border-radius: 20px;
+  color: var(--accent-blue) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.2s ease !important;
+}
+
+.btn-nav:hover {
+  background: rgba(56, 189, 248, 0.15);
+}
+
+.nav-links a:not(.btn-nav):hover, 
+.nav-links a:not(.btn-nav).active {
+  color: var(--accent-blue) !important;
+  border-bottom: 2px solid var(--accent-blue);
+}
+
+/* Layout & Typography */
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 90px 24px 40px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+  border-radius: 2px;
+}
+
+.hero-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 160px 24px 80px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid var(--accent-blue);
+  color: var(--accent-blue);
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.highlight {
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 650px;
+  margin-bottom: 30px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background: var(--btn-primary);
+  color: var(--btn-primary-text);
+  box-shadow: 0 4px 20px rgba(2, 132, 199, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--btn-sec-bg);
+  color: var(--text-main);
+  border: 1px solid var(--btn-sec-border);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.social-links a {
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  margin-right: 20px;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-blue);
+}
+
+/* Cards & Components */
+.about-card, .project-card, .skill-card, .exp-card, .contact-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+  transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Experience Cards */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.exp-header h3 {
+  font-size: 1.25rem;
+}
+
+.exp-date {
+  font-size: 0.85rem;
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
+.exp-company {
+  font-weight: 700;
+  color: var(--accent-purple);
+  margin-bottom: 12px;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-blue);
+}
+
+.skill-card i {
+  font-size: 2rem;
+  color: var(--accent-blue);
+}
+
+/* Filter Buttons */
+.filter-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  border-radius: 12px;
+  background: var(--btn-sec-bg);
+  border: 1px solid var(--btn-sec-border);
+  color: var(--text-muted);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: var(--accent-blue);
+  color: #ffffff;
+  border-color: var(--accent-blue);
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-tag {
+  color: var(--accent-purple);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project-info h3 {
+  font-size: 1.4rem;
+  margin: 8px 0;
+}
+
+.project-info p {
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tech-stack span {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-link {
+  color: var(--accent-blue);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Contact Card */
+.contact-card {
+  text-align: center;
+}
+
+.contact-card p {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 24px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 24px;
+  border-top: 1px solid var(--nav-border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
