@@ -9,8 +9,8 @@ Welcome to my central repository for all projects developed during the **CodeAlp
 | Task # | Project Name | Description | Tech Stack | Links | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Task 1** | _Upcoming Task_ | Reserved for Task 1 assignment | `HTML` `CSS` `JS` | — | ⏳ In Progress |
-| **Task 2** | Web Calculator | Modern 3D Neumorphic Calculator with live preview & keyboard controls | `HTML5` `CSS3` `JS` | [Live Demo](https://codealpha-calculator-uzair.netlify.app/) · [Repository](./CodeAlpha_Calculator) | ✅ Completed |
-| **Task 3** | Developer Portfolio | Responsive portfolio with dark/light mode toggle & filters | `HTML5` `CSS3` `JS` | [Live Demo](https://protfolio-uzair.netlify.app/) · [Repository](./CodeAlpha_Portfolio) | ✅ Completed |
+| **Task 2** | Web Calculator | Modern 3D Neumorphic Calculator with live preview & keyboard controls | `HTML5` `CSS3` `JS` | [Live Demo](https://codealpha-calculator-uzair.netlify.app/) [Repository](./CodeAlpha_Calculator) | ✅ Completed |
+| **Task 3** | Developer Portfolio | Responsive portfolio with dark/light mode toggle & filters | `HTML5` `CSS3` `JS` | [Live Demo](https://protfolio-uzair.netlify.app/) [Repository](./CodeAlpha_Portfolio) | ✅ Completed |
 
 ---
 
