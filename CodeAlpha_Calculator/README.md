@@ -37,7 +37,7 @@ Developed as part of the **Frontend Development Virtual Internship at CodeAlpha*
 2. **Navigate into the Project Directory:**
 
    ```bash
-   cd CodeAlpha_Tasks/Task2_Calculator
+   cd CodeAlpha_Tasks/CodeAlpha_Calculator
    ```
 
 3. **Open the Application:**
