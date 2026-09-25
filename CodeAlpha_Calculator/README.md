@@ -6,6 +6,14 @@ Developed as part of the **Frontend Development Virtual Internship at CodeAlpha*
 
 ---
 
+## 🌐 Live Demo
+
+Experience the live application online without local setup:
+
+👉 **[Launch Live Web Calculator](https://codealpha-calculator-uzair.netlify.app/)**
+
+---
+
 ## ✨ Features
 
 - **🎨 Sleek Dark Aesthetic UI:** Custom-built modern 3D depth design featuring vibrant color-coded key actions and smooth press animations.
