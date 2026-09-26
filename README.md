@@ -8,7 +8,7 @@ Welcome to my central repository for all projects developed during the **CodeAlp
 
 | Task # | Project Name | Description | Tech Stack | Links | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Task 1** | _Upcoming Task_ | Reserved for Task 1 assignment | `HTML` `CSS` `JS` | — | ⏳ In Progress |
+| **Task 1** | Music Player | Interactive web music player with custom audio controls, progress scrubbing, and dynamic playlist management | `HTML5` `CSS3` `JS` | [Live Demo](https://codealpha-musicplayer-uzair.netlify.app/) · [Repository](./CodeAlpha_MusicPlayer) | ⏳ In Progress |
 | **Task 2** | Web Calculator | Modern 3D Neumorphic Calculator with live preview & keyboard controls | `HTML5` `CSS3` `JS` | [Live Demo](https://codealpha-calculator-uzair.netlify.app/) [Repository](./CodeAlpha_Calculator) | ✅ Completed |
 | **Task 3** | Developer Portfolio | Responsive portfolio with dark/light mode toggle & filters | `HTML5` `CSS3` `JS` | [Live Demo](https://protfolio-uzair.netlify.app/) [Repository](./CodeAlpha_Portfolio) | ✅ Completed |
 
@@ -18,6 +18,11 @@ Welcome to my central repository for all projects developed during the **CodeAlp
 
 ```text
 CodeAlpha_Tasks/
+├── CodeAlpha_MusicPlayer/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
 ├── CodeAlpha_Calculator/
 │   ├── index.html
 │   ├── style.css
