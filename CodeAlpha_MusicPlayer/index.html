@@ -10,9 +10,66 @@
 </head>
 
 <body>
+    <div class="background-overlay"></div>
+
     <main class="player-container">
-        <!-- Music Player App Scaffold -->
+        <!-- Dark / Light Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Dark/Light Mode">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Track Artwork -->
+        <div class="art-container">
+            <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=500&auto=format&fit=crop"
+                id="cover" alt="Track Album Art">
+        </div>
+
+        <!-- Track Information -->
+        <div class="track-details">
+            <h2 id="title">Neon Horizon</h2>
+            <h3 id="artist">Synthwave Dreams</h3>
+        </div>
+
+        <!-- Hidden Audio Element -->
+        <audio id="audio" preload="metadata"></audio>
+
+        <!-- Progress Scrub Bar -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress-bar" id="progress"></div>
+            <div class="time-info">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <!-- Main Playback Controls -->
+        <div class="controls">
+            <button id="prev" class="action-btn" title="Previous Track">
+                <i class="fas fa-backward-step"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big" title="Play / Pause">
+                <i class="fas fa-play" id="play-icon"></i>
+            </button>
+            <button id="next" class="action-btn" title="Next Track">
+                <i class="fas fa-forward-step"></i>
+            </button>
+        </div>
+
+        <!-- Volume Control Bar -->
+        <div class="volume-container">
+            <i class="fas fa-volume-high" id="volume-icon"></i>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.8">
+        </div>
+
+        <!-- Playlist Panel -->
+        <section class="playlist-section">
+            <h4><i class="fas fa-list-ul"></i> Playlist</h4>
+            <ul id="playlist" class="playlist-list">
+                <!-- Dynamic tracks injected via JavaScript -->
+            </ul>
+        </section>
     </main>
+
     <script src="script.js"></script>
 </body>
 
