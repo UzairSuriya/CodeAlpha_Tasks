@@ -8,9 +8,9 @@ Welcome to my central repository for all projects developed during the **CodeAlp
 
 | Task # | Project Name | Description | Tech Stack | Links | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Task 1** | Music Player | Interactive web music player with custom audio controls, progress scrubbing, and dynamic playlist management | `HTML5` `CSS3` `JS` | [Live Demo](https://codealpha-musicplayer-uzair.netlify.app/) · [Repository](./CodeAlpha_MusicPlayer) | ⏳ In Progress |
-| **Task 2** | Web Calculator | Modern 3D Neumorphic Calculator with live preview & keyboard controls | `HTML5` `CSS3` `JS` | [Live Demo](https://codealpha-calculator-uzair.netlify.app/) [Repository](./CodeAlpha_Calculator) | ✅ Completed |
-| **Task 3** | Developer Portfolio | Responsive portfolio with dark/light mode toggle & filters | `HTML5` `CSS3` `JS` | [Live Demo](https://protfolio-uzair.netlify.app/) [Repository](./CodeAlpha_Portfolio) | ✅ Completed |
+| **Task 1** | Music Player | Interactive web music player with custom audio controls, progress scrubbing, and dynamic playlist management | `HTML5` `CSS3` `JS` | [Live Demo](https://codealpha-musicplayer-uzair.netlify.app/)  [Repository](./CodeAlpha_MusicPlayer) | ✅ Completed |
+| **Task 2** | Web Calculator | Modern 3D Neumorphic Calculator with live preview & keyboard controls | `HTML5` `CSS3` `JS` | [Live Demo](https://codealpha-calculator-uzair.netlify.app/)  [Repository](./CodeAlpha_Calculator) | ✅ Completed |
+| **Task 3** | Developer Portfolio | Responsive portfolio with dark/light mode toggle & filters | `HTML5` `CSS3` `JS` | [Live Demo](https://protfolio-uzair.netlify.app/)  [Repository](./CodeAlpha_Portfolio) | ✅ Completed |
 
 ---
 
